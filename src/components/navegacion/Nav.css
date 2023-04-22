@@ -3,13 +3,14 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:#8393F6 ;
   height: 50px;
 }
 
 #right{
   float: right;
 }
+
 
 .link {
   float: left;
@@ -23,3 +24,5 @@ nav {
 .link:hover {
   background-color: #111;
 }
+
+

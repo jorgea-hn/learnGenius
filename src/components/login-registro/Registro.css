@@ -1,27 +1,64 @@
-.container{
-    background-color: aquamarine;
+.contenedor{
+    width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center; /* centra horizontalmente los elementos */
+    align-items: center; /* centra verticalmente los elementos */
+    padding: 30px; /* agrega un padding de 30px para evitar que los elementos se peguen a los lados */
+}
+
+.Saludo{
+    text-align: center; /* centra el contenido del div-saludo */
+}
+
+.Saludo h1{
+    margin-top: 0; /* quita el margen superior para que el h1 esté alineado verticalmente en el centro */
+}
+
+.contenedor-formulario{
+
+    display: flex;
+    flex-grow: 1; /* agrega esta propiedad para que el elemento se ajuste a la pantalla */
+    flex-shrink: 1; /* agrega esta propiedad para que el elemento se ajuste a la pantalla */
+    flex-basis: 50%; /* agrega esta propiedad para que el elemento ocupe la mitad de la pantalla */
     justify-content: center;
     align-items: center;
+    padding: 30px; /* agrega padding al contenedor para tener un espacio adecuado alrededor del formulario */
+    min-height: 100%; /* agrega esta propiedad para que el elemento tenga al menos la altura mínima que necesitas */
 }
 
 #formulario{
-    width: 30%;
-    background-color: beige;
-    height: max-content;
-    border-radius: 15px;
-    padding: 3%;
+    padding: 40px;
+    width: 70%; /* ajusta el ancho del formulario para que ocupe todo el ancho del contenedor-formulario */
+    background-color: #8393F6;
+    border-radius: 25px;
+    margin: 0; /* quita el margen para eliminar cualquier espacio adicional */
+
 }
 
 #terminos{
     display: flex;
+    align-items: center;
 }
 
 .formulario-input{
     width: 100%;
     height: 30px;
     margin: 5px 0;
-    border-radius: 5px;
     border: none;
+    padding: 10px;
+    margin-top:20px;
+}
+
+
+#boton-formulario{
+    width: 100px;
+    height: 35px;
+    background-color: #F762E3;
+    border: transparent;
+    border-radius: 5px;
+}
+
+#boton-formulario:hover{
+    background-color: #c74eb7;
 }

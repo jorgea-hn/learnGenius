@@ -39,8 +39,17 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                <section >
-
+                <section className="session frase">
+                        <h2>Uno para todos, todos para uno</h2>
+                </section>
+                <section className="session comunidad">
+                        <h2>Unete a la comunidad</h2>
+                </section>
+                <section className="session inscripcion">
+                        <h2>Pre-inscripcion</h2>
+                </section>
+                <section className="session cursos">
+                        <h2>Cursos mas populares</h2>
                 </section>
             </main>
             <footer>

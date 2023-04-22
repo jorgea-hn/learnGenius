@@ -18,19 +18,24 @@ function Login() {
   }
 
   return (
-    <div>
+    <div className="contenedor">
+      <div className="Saludo">
+        <h1>Te damos la Bienvenida a</h1>
+        <img src="https://cursosonlinecertificados.com/wp-content/uploads/2019/02/LOGO-3.png" alt="" />
+      </div>
+
       {isLoggedIn ? (
         <Navigate to="/estudiantes" />
       ) : (
-        <div className="container">
+        <div className="contenedor-formulario">
           <form id="formulario" onSubmit={handleLoginSubmit}>
-            <h2>Login</h2><br />
-            <input className="formulario-input" type="email" id="fname"  placeholder="Usuario" value={email} onChange={e => setEmail(e.target.value)}/><br/>
-            <input className="formulario-input" type="password" id="fname"  placeholder="Contraseña" value={password} onChange={e => setPassword(e.target.value)}/><br/>
-            
-            <input type="submit" value="Login"/><br /><br />
-            
-          </form> 
+            <h2>LOGIN</h2><br />
+            <input className="formulario-input" type="email" id="fname" placeholder="Usuario" value={email} onChange={e => setEmail(e.target.value)} /><br />
+            <input className="formulario-input" type="password" id="fname" placeholder="Contraseña" value={password} onChange={e => setPassword(e.target.value)} /><br /><br /><br />
+
+            <input  id="boton-formulario" type="submit" value="Login" /><br /><br />
+
+          </form>
         </div>
       )}
     </div>

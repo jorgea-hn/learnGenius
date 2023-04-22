@@ -15,19 +15,14 @@ function Nav() {
     <div>
       <nav>
         <ul id="left">
-          <Link className="link" to="/">
-            <img src="" alt="Logo" />
-          </Link>
+          <Link className="link" to="/">Logo </Link>
         </ul>
+
         <ul id="center">
-          <Link className="link" to="">
-            Busqueda
-          </Link>
+          <Link className="link" to="">Busqueda</Link>
         </ul>
         <ul id="right">
-          <Link className="link" to="">
-            Cursos
-          </Link>
+          <Link className="link" to="">Cursos</Link>
           {isLoggedIn ? (
             <>
               <img src="https://via.placeholder.com/40" alt="Imagen de perfil" />
@@ -35,9 +30,9 @@ function Nav() {
             </>
           ) : (
             <>
-             {isLoggedIn ? null : <Link className="link" to="/login">Entrar</Link>}
+              {isLoggedIn ? null : <Link className="link" to="/login">Entrar</Link>}
               <Link className="link" to="/registro">
-                <img src="https://via.placeholder.com/40" alt="Imagen de registro" />
+                Registro
               </Link>
             </>
           )}
